@@ -9,6 +9,8 @@ NPL.load("(gl)Mod/FirstApp/main.lua");
 local FirstApp = commonlib.gettable("Mod.FirstApp");
 ------------------------------------------------------------
 ]]
+NPL.load("(gl)Mod/FirstApp/Helper.lua");
+local Helper = commonlib.gettable("Mod.FirstApp.Helper");
 local FirstApp = commonlib.inherit(commonlib.gettable("Mod.ModBase"),commonlib.gettable("Mod.FirstApp"));
 
 function FirstApp:ctor()
@@ -35,10 +37,10 @@ end
 -- called when a new world is loaded. 
 
 function FirstApp:OnWorldLoad() 
-    _guihelper.MessageBox("from first APP");
+    Helper:Hello();
 end
--- called when a world is unloaded. 
 
+-- called when a world is unloaded. 
 function FirstApp:OnLeaveWorld()
 end
 
