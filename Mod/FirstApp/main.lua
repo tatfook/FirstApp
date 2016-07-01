@@ -14,10 +14,10 @@ local Helper = commonlib.gettable("Mod.FirstApp.Helper");
 local FirstApp = commonlib.inherit(commonlib.gettable("Mod.ModBase"),commonlib.gettable("Mod.FirstApp"));
 
 function FirstApp:ctor()
+	
 end
 
 -- virtual function get mod name
-
 function FirstApp:GetName()
 	return "FirstApp"
 end

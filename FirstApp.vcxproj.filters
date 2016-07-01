@@ -15,5 +15,8 @@
     <None Include="Mod\FirstApp\Helper.lua">
       <Filter>Mod\FirstApp</Filter>
     </None>
+    <None Include=".gitignore" />
+    <None Include="InstallPackages.bat" />
+    <None Include="Run.bat" />
   </ItemGroup>
 </Project>
